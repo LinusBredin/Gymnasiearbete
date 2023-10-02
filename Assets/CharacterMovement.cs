@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-public class PlayerJump : MonoBehaviour
+public class CharacterMovement : MonoBehaviour
 {
     public Rigidbody2D rb;
     public SpriteRenderer sprite;
@@ -137,8 +137,11 @@ public class PlayerJump : MonoBehaviour
             grounded = true;
         }
     }
-    private void OnCollisionExit2D(Collision2D col)
+    private void OnCollisionExit2D(Collision2D other)
     {
-        grounded = false;
+        if (other.gameObject.tag == "platform")
+        {
+            grounded = false;
+        }
     }
 }
