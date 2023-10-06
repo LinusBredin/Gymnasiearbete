@@ -213,6 +213,7 @@ GameObject:
   - component: {fileID: 409309232}
   - component: {fileID: 409309235}
   - component: {fileID: 409309236}
+  - component: {fileID: 409309237}
   m_Layer: 0
   m_Name: Character
   m_TagString: Untagged
@@ -382,6 +383,28 @@ MonoBehaviour:
   dashSpeed: 50
   maxJumpTimes: 1
   startDashTime: 0.1
+  animator: {fileID: 409309237}
+--- !u!95 &409309237
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 409309230}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 530ed76ecf91bc14191c87398401173b, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0

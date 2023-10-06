@@ -23,6 +23,8 @@ public class CharacterMovement : MonoBehaviour
     bool grounded = true;
     float jumpTime = 0;
 
+    public Animator animator;
+
 
     private void Start()
     {
@@ -102,12 +104,23 @@ public class CharacterMovement : MonoBehaviour
         {
             rb.transform.Translate(Vector2.right * moveAmount * Time.deltaTime);
             sprite.flipX = false;
+            animator.SetFloat("Speed", moveAmount);
         }
-        if (Input.GetKey(KeyCode.A) && canMove)
+        else if (Input.GetKey(KeyCode.A) && canMove)
         {
             rb.transform.Translate(Vector2.left * moveAmount * Time.deltaTime);
             sprite.flipX = true;
+            animator.SetFloat("Speed", moveAmount);
         }
+        else
+        {
+            animator.SetFloat("Speed", 0);
+        }
+
+           
+
+
+
     }
     IEnumerator Dash(Vector2 direction)
     {
@@ -129,6 +142,7 @@ public class CharacterMovement : MonoBehaviour
 
         canMove = true;
     }
+
 
     private void OnCollisionEnter2D(Collision2D other)
     {
