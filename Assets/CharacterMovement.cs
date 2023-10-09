@@ -40,6 +40,24 @@ public class CharacterMovement : MonoBehaviour
             jumpTime = 0;
 
         }
+        if(rb.velocity.y < 0.1)
+        {
+            animator.SetBool("Grounded?D", grounded);
+        }
+        else
+        {
+            animator.SetBool("Grounded?D", true);
+        }
+
+        if (rb.velocity.y >= 0.1)
+        {
+            animator.SetBool("Grounded?U", grounded);
+        }
+        else
+        {
+            animator.SetBool("Grounded?U", true);
+        }
+
 
         if (jumping)
         {
