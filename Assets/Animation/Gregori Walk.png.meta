@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -121,7 +121,175 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Gregori Walk_0
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 150
+        width: 421
+        height: 510
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1075ecff4b280ac46b515902f878bec8
+      internalID: -1945763400
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gregori Walk_1
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 150
+        width: 421
+        height: 510
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 58521a3752b9f714db17a2adc3c9501d
+      internalID: -1973100503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gregori Walk_2
+      rect:
+        serializedVersion: 2
+        x: 1742
+        y: 160
+        width: 440
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18b0b5dd98eeee943b487166e5e700ba
+      internalID: -2046769787
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gregori Walk_4
+      rect:
+        serializedVersion: 2
+        x: 2552
+        y: 160
+        width: 440
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba40c801dd1d3a74389800025bbeee59
+      internalID: 1489568256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gregori Walk_6
+      rect:
+        serializedVersion: 2
+        x: 3362
+        y: 150
+        width: 440
+        height: 510
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d9c2e7f8348d0741bd29ba196733ac2
+      internalID: 44835041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gregori Walk_8
+      rect:
+        serializedVersion: 2
+        x: 4172
+        y: 150
+        width: 430
+        height: 510
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 877835137e371cb4cbdec858b4ec19a5
+      internalID: 1438862152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gregori Walk_10
+      rect:
+        serializedVersion: 2
+        x: 4982
+        y: 150
+        width: 421
+        height: 510
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec233423ee6ebc64fa9a043918a51aef
+      internalID: -1151106006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gregori Walk_12
+      rect:
+        serializedVersion: 2
+        x: 5792
+        y: 150
+        width: 421
+        height: 510
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de6a9eb537df047499d8cba523cd66f5
+      internalID: 1601094813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +300,21 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Gregori Walk_0: -1945763400
+      Gregori Walk_1: -1973100503
+      Gregori Walk_10: -1151106006
+      Gregori Walk_11: -845118499
+      Gregori Walk_12: 1601094813
+      Gregori Walk_13: -1516259399
+      Gregori Walk_2: -2046769787
+      Gregori Walk_3: -814023707
+      Gregori Walk_4: 1489568256
+      Gregori Walk_5: -824252327
+      Gregori Walk_6: 44835041
+      Gregori Walk_7: -1989154616
+      Gregori Walk_8: 1438862152
+      Gregori Walk_9: -572998485
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

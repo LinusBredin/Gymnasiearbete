@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -121,7 +121,217 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Gregori stand still_0
+      rect:
+        serializedVersion: 2
+        x: 121
+        y: 148
+        width: 423
+        height: 514
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 701ba53730f1bf442a5a67c96e847a09
+      internalID: 1528568436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gregori stand still_1
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 148
+        width: 424
+        height: 514
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9898ea5f5608ae4eb4f3c18dc48b949
+      internalID: -1423735843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gregori stand still_2
+      rect:
+        serializedVersion: 2
+        x: 1742
+        y: 148
+        width: 423
+        height: 514
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e080f71fb7c56b4e9df178a79306074
+      internalID: -510721530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gregori stand still_3
+      rect:
+        serializedVersion: 2
+        x: 2549
+        y: 148
+        width: 427
+        height: 514
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88a9bc2785be44042b07204dff4878c5
+      internalID: -1144723035
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gregori stand still_4
+      rect:
+        serializedVersion: 2
+        x: 3360
+        y: 148
+        width: 426
+        height: 514
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee7031155f28df349b8cb7f9cf46eb7d
+      internalID: -2091464614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gregori stand still_5
+      rect:
+        serializedVersion: 2
+        x: 4171
+        y: 148
+        width: 423
+        height: 514
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6494ac9fdfde8f46924fc5fee4ca08c
+      internalID: 77315708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gregori stand still_6
+      rect:
+        serializedVersion: 2
+        x: 4981
+        y: 148
+        width: 424
+        height: 514
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c8c94d77ce3f2846853809bbf0f18d7
+      internalID: 2050280742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gregori stand still_7
+      rect:
+        serializedVersion: 2
+        x: 5792
+        y: 148
+        width: 423
+        height: 506
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcf9bc7f85d23a1438dfc7aff3d0b633
+      internalID: -1985644077
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gregori stand still_8
+      rect:
+        serializedVersion: 2
+        x: 6599
+        y: 148
+        width: 427
+        height: 506
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 239702fc5118cd34e8845210d45e141e
+      internalID: -1091106636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gregori stand still_9
+      rect:
+        serializedVersion: 2
+        x: 7410
+        y: 148
+        width: 426
+        height: 506
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa9f50e894fd1ea469383ba0b526e1b6
+      internalID: -336781186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +342,17 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Gregori stand still_0: 1528568436
+      Gregori stand still_1: -1423735843
+      Gregori stand still_2: -510721530
+      Gregori stand still_3: -1144723035
+      Gregori stand still_4: -2091464614
+      Gregori stand still_5: 77315708
+      Gregori stand still_6: 2050280742
+      Gregori stand still_7: -1985644077
+      Gregori stand still_8: -1091106636
+      Gregori stand still_9: -336781186
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -121,7 +121,175 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Gregori Fall_0
+      rect:
+        serializedVersion: 2
+        x: 2533
+        y: 140
+        width: 505
+        height: 558
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 237f61711897cf14eb8c2e9608dcdbce
+      internalID: 996498941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gregori Fall_1
+      rect:
+        serializedVersion: 2
+        x: 3344
+        y: 140
+        width: 502
+        height: 565
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb6707579130f3b4facf5a5c0691f5e4
+      internalID: -2079251219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gregori Fall_2
+      rect:
+        serializedVersion: 2
+        x: 4152
+        y: 140
+        width: 506
+        height: 565
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1663299b20840b44baec0a6f6bed74f3
+      internalID: -1763611042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gregori Fall_9
+      rect:
+        serializedVersion: 2
+        x: 123
+        y: 158
+        width: 413
+        height: 494
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0658fa3be16c794487a0c3ce99355bc
+      internalID: 1926246734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gregori Fall_10
+      rect:
+        serializedVersion: 2
+        x: 931
+        y: 158
+        width: 478
+        height: 519
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46846851c0c0eb742b75841bdfa6735c
+      internalID: 329327615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gregori Fall_11
+      rect:
+        serializedVersion: 2
+        x: 1732
+        y: 147
+        width: 495
+        height: 540
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9409301ed30682b4d97151067dcf415d
+      internalID: -1623872218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gregori Fall_12
+      rect:
+        serializedVersion: 2
+        x: 4964
+        y: 140
+        width: 503
+        height: 574
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5ffaf171dac5454c9f0cd1549368fd3
+      internalID: -1320185557
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gregori Fall_13
+      rect:
+        serializedVersion: 2
+        x: 5775
+        y: 140
+        width: 504
+        height: 575
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98f2497b394f11a4e8fc2b114e2047ba
+      internalID: -265033916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +300,22 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Gregori Fall_0: 996498941
+      Gregori Fall_1: -2079251219
+      Gregori Fall_10: 329327615
+      Gregori Fall_11: -1623872218
+      Gregori Fall_12: -1320185557
+      Gregori Fall_13: -265033916
+      Gregori Fall_14: 717650933
+      Gregori Fall_2: -1763611042
+      Gregori Fall_3: -1974792632
+      Gregori Fall_4: -391237557
+      Gregori Fall_5: -1324397675
+      Gregori Fall_6: 1143412077
+      Gregori Fall_7: 14415513
+      Gregori Fall_8: 802388441
+      Gregori Fall_9: 1926246734
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

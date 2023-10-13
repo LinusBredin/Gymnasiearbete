@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -121,7 +121,175 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Gregori Jump_0
+      rect:
+        serializedVersion: 2
+        x: 122
+        y: 150
+        width: 421
+        height: 510
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68a3a96f2cf09714f9ba3c4723b427dd
+      internalID: 622788757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gregori Jump_1
+      rect:
+        serializedVersion: 2
+        x: 932
+        y: 150
+        width: 414
+        height: 494
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ced250cb51acdf48a074d28b251c631
+      internalID: -1759974301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gregori Jump_3
+      rect:
+        serializedVersion: 2
+        x: 1712
+        y: 119
+        width: 460
+        height: 531
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8effbc397384f44eaead530befd4e8f
+      internalID: 1927854760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gregori Jump_4
+      rect:
+        serializedVersion: 2
+        x: 2542
+        y: 150
+        width: 424
+        height: 500
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03d9b996ff0d1b347a8c8439a7c8e61c
+      internalID: -225113234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gregori Jump_5
+      rect:
+        serializedVersion: 2
+        x: 3335
+        y: 130
+        width: 441
+        height: 520
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1341373b9eebc7243ab02e5dad8932c6
+      internalID: 268236065
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gregori Jump_6
+      rect:
+        serializedVersion: 2
+        x: 4154
+        y: 122
+        width: 432
+        height: 528
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34dece0af2807f049aa83ec85bf01d73
+      internalID: 963720120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gregori Jump_7
+      rect:
+        serializedVersion: 2
+        x: 4955
+        y: 135
+        width: 441
+        height: 515
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edddc2d804120d443a128ceeee6c8aec
+      internalID: 372187495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Gregori Jump_9
+      rect:
+        serializedVersion: 2
+        x: 5767
+        y: 132
+        width: 439
+        height: 518
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06414fbc570f8a74c9a94c5e77eb3c40
+      internalID: 1357460958
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +300,27 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Gregori Jump_0: 622788757
+      Gregori Jump_1: -1759974301
+      Gregori Jump_10: 489228043
+      Gregori Jump_11: 1767648581
+      Gregori Jump_12: -1896050394
+      Gregori Jump_13: 1410318121
+      Gregori Jump_14: 1870115505
+      Gregori Jump_15: -1765452020
+      Gregori Jump_16: 1899184447
+      Gregori Jump_17: -1744396952
+      Gregori Jump_18: -1131439308
+      Gregori Jump_19: 594962634
+      Gregori Jump_2: -918039727
+      Gregori Jump_3: 1927854760
+      Gregori Jump_4: -225113234
+      Gregori Jump_5: 268236065
+      Gregori Jump_6: 963720120
+      Gregori Jump_7: 372187495
+      Gregori Jump_8: -54360535
+      Gregori Jump_9: 1357460958
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
