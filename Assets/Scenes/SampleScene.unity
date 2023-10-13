@@ -290,12 +290,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: f7cfadcc0b97c8c448589be70e92cdb8, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f1bd452ddb98f644fb478c03d58a84ef, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 4.46, y: 5.2}
+  m_Size: {x: 4.1, y: 4.92}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
@@ -353,7 +353,7 @@ BoxCollider2D:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
     oldSize: {x: 4.1, y: 4.92}
-    newSize: {x: 4.46, y: 5.2}
+    newSize: {x: 4.1, y: 4.92}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
@@ -370,20 +370,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 409309230}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cab6128b4cc290046956d4730f0296a6, type: 3}
+  m_Script: {fileID: 11500000, guid: 30ae25f8c9904e243829f9464dab0827, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   rb: {fileID: 409309232}
   sprite: {fileID: 409309233}
-  jumpAmount: 40
+  jumpAmount: 35
   gravityScale: 10
-  fallingGravityScale: 20
-  moveAmount: 20
+  fallingGravityScale: 40
+  moveAmount: 0.01
   buttonTime: 0.3
   cancelRate: 100
-  dashSpeed: 50
+  dashSpeed: 2
   maxJumpTimes: 1
-  startDashTime: 0.1
+  startDashTime: 10
   animator: {fileID: 409309237}
 --- !u!95 &409309237
 Animator:
@@ -395,7 +395,7 @@ Animator:
   m_GameObject: {fileID: 409309230}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 530ed76ecf91bc14191c87398401173b, type: 2}
+  m_Controller: {fileID: 9100000, guid: a4d162a8cf8cc654087042a64234a9d8, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -415,7 +415,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 409309230}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 00ff2d4714bf4f3448ea144396fbece1, type: 3}
+  m_Script: {fileID: 11500000, guid: 3adb858f48b783f42b1d6e3d180f3556, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1 &519420028
@@ -520,7 +520,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 519420028}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8ff6ccf4ddd73144f81ade02779a0c4a, type: 3}
+  m_Script: {fileID: 11500000, guid: bb32e2fbd20c9504dbe475611b4a419f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   followSpeed: 2
@@ -669,11 +669,11 @@ MonoBehaviour:
   m_GameObject: {fileID: 1609085735}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d2631487e5bf9d94da040e2d782cc388, type: 3}
+  m_Script: {fileID: 11500000, guid: 02f20ea08df6c3540b4bf7d3da4d8a65, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   target: {fileID: 409309234}
-  speed: 400
+  speed: 200
   nextWaypointDistance: 3
   enemyGFX: {fileID: 2002923128}
 --- !u!50 &1609085738
@@ -845,7 +845,7 @@ SpriteRenderer:
   m_Size: {x: 3, y: 3}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
+  m_WasSpriteAssigned: 0
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!1660057539 &9223372036854775807
