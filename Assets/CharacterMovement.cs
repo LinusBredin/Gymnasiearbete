@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.InputSystem;
 public class CharacterMovement : MonoBehaviour
 {
     public Rigidbody2D rb;
@@ -14,6 +15,7 @@ public class CharacterMovement : MonoBehaviour
     public float dashSpeed = 2;
     public int maxJumpTimes = 1;
     public float startDashTime = 10;
+    public PlayerControls playerControls;
     int jumpTimes;
     float currentDashTime;
     bool jumping = false;
@@ -22,6 +24,20 @@ public class CharacterMovement : MonoBehaviour
     bool canMove = true;
     bool grounded = true;
     float jumpTime = 0;
+
+    private InputAction move;
+
+    private void  OnEnable()
+    {
+        move = playerControls.Player.Move;
+        move.Enable();
+    }
+
+    private void OnDisable()
+    {
+        move.Disable();
+    }
+
 
     public Animator animator;
 
