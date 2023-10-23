@@ -18,6 +18,7 @@ public class CharacterMovement : MonoBehaviour
     public PlayerControls playerControls;
     int jumpTimes;
     float currentDashTime;
+    private float moveDirection;
     bool jumping = false;
     bool jumpCancelled = false;
     bool canDash = true;
@@ -26,16 +27,25 @@ public class CharacterMovement : MonoBehaviour
     float jumpTime = 0;
 
     private InputAction move;
+    private InputAction jump;
+
+    private void Awake()
+    {
+        playerControls = new PlayerControls();
+    }
 
     private void  OnEnable()
     {
         move = playerControls.Player.Move;
+        jump = playerControls.Player.Jump;
         move.Enable();
+        jump.Enable();
     }
 
     private void OnDisable()
     {
         move.Disable();
+        jump.Disable();
     }
 
 
@@ -48,7 +58,9 @@ public class CharacterMovement : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) && grounded)
+
+        moveDirection = move.ReadValue<float>();
+        if (jump.WasPerformedThisFrame() && grounded)
         {
             rb.AddForce(new Vector2(0, jumpAmount), ForceMode2D.Impulse);
             jumping = true;
@@ -56,7 +68,7 @@ public class CharacterMovement : MonoBehaviour
             jumpTime = 0;
 
         }
-        if(rb.velocity.y < 0.1)
+        if(rb.velocity.y < 0.2)
         {
             animator.SetBool("Grounded?D", grounded);
         }
@@ -65,7 +77,7 @@ public class CharacterMovement : MonoBehaviour
             animator.SetBool("Grounded?D", true);
         }
 
-        if (rb.velocity.y >= 0.1)
+        if (rb.velocity.y >= 0.2)
         {
             animator.SetBool("Grounded?U", grounded);
         }
@@ -78,7 +90,7 @@ public class CharacterMovement : MonoBehaviour
         if (jumping)
         {
             jumpTime += Time.deltaTime;
-            if (Input.GetKeyUp(KeyCode.Space))
+            if (jump.WasReleasedThisFrame())
             {
                 jumpCancelled = true;
             }
@@ -125,6 +137,15 @@ public class CharacterMovement : MonoBehaviour
             canDash = true;
         }
 
+        if (moveDirection > 0)
+        {
+            sprite.flipX = false;
+        }
+        if (moveDirection < 0)
+        {
+            sprite.flipX = true;
+        }
+
     }
 
     void FixedUpdate()
@@ -134,22 +155,29 @@ public class CharacterMovement : MonoBehaviour
         {
             rb.AddForce(Vector2.down * cancelRate);
         }
-        if (Input.GetKey(KeyCode.D) && canMove)
+        /* if (Input.GetKey(KeyCode.D) && canMove)
+         {
+             rb.transform.Translate(Vector2.right * moveAmount * Time.deltaTime);
+             sprite.flipX = false;
+             animator.SetFloat("Speed", moveAmount);
+         }
+         else if (Input.GetKey(KeyCode.A) && canMove)
+         {
+             rb.transform.Translate(Vector2.left * moveAmount * Time.deltaTime);
+             sprite.flipX = true;
+             animator.SetFloat("Speed", moveAmount);
+         }
+         else
+         {
+             animator.SetFloat("Speed", 0);
+         }*/
+
+        if (canMove)
         {
-            rb.transform.Translate(Vector2.right * moveAmount * Time.deltaTime);
-            sprite.flipX = false;
-            animator.SetFloat("Speed", moveAmount);
+        rb.transform.Translate(new Vector2(moveDirection * moveAmount * Time.deltaTime,0));
+            animator.SetFloat("Speed", Mathf.Abs(moveDirection) * moveAmount);            
         }
-        else if (Input.GetKey(KeyCode.A) && canMove)
-        {
-            rb.transform.Translate(Vector2.left * moveAmount * Time.deltaTime);
-            sprite.flipX = true;
-            animator.SetFloat("Speed", moveAmount);
-        }
-        else
-        {
-            animator.SetFloat("Speed", 0);
-        }
+
 
            
 
