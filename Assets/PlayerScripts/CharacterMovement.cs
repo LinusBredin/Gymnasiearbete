@@ -15,7 +15,6 @@ public class CharacterMovement : MonoBehaviour
     public float dashSpeed = 2;
     public int maxJumpTimes = 1;
     public float startDashTime = 10;
-    public PlayerControls playerControls;
     int jumpTimes;
     float currentDashTime;
     private float moveDirection;
@@ -26,31 +25,9 @@ public class CharacterMovement : MonoBehaviour
     bool grounded = true;
     float jumpTime = 0;
 
-    private InputAction move;
-    private InputAction jump;
-    private InputAction dash;
 
-    private void Awake()
-    {
-        playerControls = new PlayerControls();
-    }
 
-    private void  OnEnable()
-    {
-        move = playerControls.Player.Move;
-        jump = playerControls.Player.Jump;
-        dash = playerControls.Player.Dash;
-        move.Enable();
-        jump.Enable();
-        dash.Enable();
-    }
 
-    private void OnDisable()
-    {
-        move.Disable();
-        jump.Disable();
-        dash.Disable();
-    }
 
 
     public Animator animator;
@@ -63,8 +40,8 @@ public class CharacterMovement : MonoBehaviour
     void Update()
     {
 
-        moveDirection = move.ReadValue<float>();
-        if (jump.WasPerformedThisFrame() && grounded)
+        moveDirection = UserInput.instance.playerControls.Player.Move.ReadValue<float>();
+        if (UserInput.instance.playerControls.Player.Jump.WasPerformedThisFrame() && grounded)
         {
             rb.AddForce(new Vector2(0, jumpAmount), ForceMode2D.Impulse);
             jumping = true;
@@ -94,7 +71,7 @@ public class CharacterMovement : MonoBehaviour
         if (jumping)
         {
             jumpTime += Time.deltaTime;
-            if (jump.WasReleasedThisFrame())
+            if (UserInput.instance.playerControls.Player.Jump.WasReleasedThisFrame())
             {
                 jumpCancelled = true;
             }
@@ -117,7 +94,7 @@ public class CharacterMovement : MonoBehaviour
         }
 
 
-        if (dash.WasPerformedThisFrame() && canDash)
+        if (UserInput.instance.playerControls.Player.Dash.WasPerformedThisFrame() && canDash)
         {
             if(moveDirection < 0 || sprite.flipX == true)
             {
