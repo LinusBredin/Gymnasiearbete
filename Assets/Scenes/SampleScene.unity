@@ -379,7 +379,7 @@ MonoBehaviour:
   fallingGravityScale: 20
   moveAmount: 15
   buttonTime: 0.3
-  cancelRate: 100
+  cancelRate: 5000
   dashSpeed: 40
   maxJumpTimes: 1
   startDashTime: 0.2
@@ -467,7 +467,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 20
+  orthographic size: 25
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2

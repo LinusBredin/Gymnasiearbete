@@ -28,6 +28,7 @@ public class CharacterMovement : MonoBehaviour
 
     private InputAction move;
     private InputAction jump;
+    private InputAction dash;
 
     private void Awake()
     {
@@ -38,14 +39,17 @@ public class CharacterMovement : MonoBehaviour
     {
         move = playerControls.Player.Move;
         jump = playerControls.Player.Jump;
+        dash = playerControls.Player.Dash;
         move.Enable();
         jump.Enable();
+        dash.Enable();
     }
 
     private void OnDisable()
     {
         move.Disable();
         jump.Disable();
+        dash.Disable();
     }
 
 
@@ -113,21 +117,13 @@ public class CharacterMovement : MonoBehaviour
         }
 
 
-        if (Input.GetKeyDown(KeyCode.LeftShift) && canDash)
+        if (dash.WasPerformedThisFrame() && canDash)
         {
-            if(Input.GetKey(KeyCode.A))
+            if(moveDirection < 0 || sprite.flipX == true)
             {
                 StartCoroutine(Dash(Vector2.left));
             }
-            else if(Input.GetKey(KeyCode.D))
-            {
-                StartCoroutine(Dash(Vector2.right));
-            }
-            else if (sprite.flipX == true)
-            {
-                StartCoroutine(Dash(Vector2.left));
-            }
-            else
+            else if(moveDirection > 0 || sprite.flipX == false)
             {
                 StartCoroutine(Dash(Vector2.right));
             }
@@ -153,24 +149,9 @@ public class CharacterMovement : MonoBehaviour
 
         if (jumpCancelled && jumping && rb.velocity.y > 0)
         {
-            rb.AddForce(Vector2.down * cancelRate);
+            rb.AddForce(Vector2.down * cancelRate * Time.deltaTime);
         }
-        /* if (Input.GetKey(KeyCode.D) && canMove)
-         {
-             rb.transform.Translate(Vector2.right * moveAmount * Time.deltaTime);
-             sprite.flipX = false;
-             animator.SetFloat("Speed", moveAmount);
-         }
-         else if (Input.GetKey(KeyCode.A) && canMove)
-         {
-             rb.transform.Translate(Vector2.left * moveAmount * Time.deltaTime);
-             sprite.flipX = true;
-             animator.SetFloat("Speed", moveAmount);
-         }
-         else
-         {
-             animator.SetFloat("Speed", 0);
-         }*/
+
 
         if (canMove)
         {
