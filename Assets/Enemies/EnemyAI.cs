@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
 using Unity.Collections;
+using UnityEditor.Experimental.GraphView;
 
 public class EnemyAI : MonoBehaviour
 {
@@ -11,12 +12,14 @@ public class EnemyAI : MonoBehaviour
 
     public float speed = 200f;
     public float nextWaypointDistance = 3f;
+    public float knockbackValue = 1000f;
 
     public Transform enemyGFX;
 
     Path path;
     int currentWaypoint = 0;
     bool reachedEndOfPath = false;
+    Vector2 direction;
 
     Seeker seeker;
     Rigidbody2D rb;
@@ -63,7 +66,7 @@ public class EnemyAI : MonoBehaviour
             reachedEndOfPath = false;
         }
 
-        Vector2 direction = ((Vector2)path.vectorPath[currentWaypoint] - rb.position).normalized;
+        direction = ((Vector2)path.vectorPath[currentWaypoint] - rb.position).normalized;
         Vector2 force = direction * speed * Time.deltaTime;
 
         rb.AddForce(force);
@@ -84,5 +87,11 @@ public class EnemyAI : MonoBehaviour
             enemyGFX.localScale = new Vector3(1f, 1f, 1f);
         }
 
+    }
+
+    public void DealtContactDamage()
+    {
+        Vector2 knockback = direction * -1 * knockbackValue;
+        rb.AddForce(knockback);
     }
 }
