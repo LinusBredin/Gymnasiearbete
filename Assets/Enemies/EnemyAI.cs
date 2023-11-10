@@ -28,6 +28,9 @@ public class EnemyAI : MonoBehaviour
     {
         seeker = GetComponent<Seeker>();
         rb = GetComponent<Rigidbody2D>();
+        target = GameObject.FindGameObjectWithTag("Player").GetComponent<Transform>();
+
+        AstarPath.active.logPathResults = PathLog.None;
 
         InvokeRepeating("UpdatePath", 0f, .5f);
     }
