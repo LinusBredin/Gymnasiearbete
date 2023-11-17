@@ -315,8 +315,7 @@ Transform:
   m_LocalPosition: {x: 3.0462413, y: -2.2156053, z: 0.0752334}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 1362210996}
+  m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &409309235
@@ -422,7 +421,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   startTimeBetweenAttacks: 0.3
-  attackPos: {fileID: 1362210996}
+  attackPos: {fileID: 0}
   attackRange: 1.8
   whatIsEnemies:
     serializedVersion: 2
@@ -3141,18 +3140,12 @@ Transform:
   - {fileID: 440776373}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-<<<<<<< HEAD
 --- !u!114 &1026835408
 MonoBehaviour:
-=======
---- !u!1 &1244444885
-GameObject:
->>>>>>> 69a8dd89c87885cbefb98c59c92688acdfd7471c
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
   m_GameObject: {fileID: 1026835400}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -3163,31 +3156,15 @@ GameObject:
   position: {fileID: 0}
   speed: 12
   nextWaypointDistance: 3
-  jumpForce: 10
+  jumpForce: 100
   enemyChargerMaxHealth: 0
   enemyChargerGFX: {fileID: 440776373}
 --- !u!114 &1026835409
 MonoBehaviour:
-=======
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1244444887}
-  - component: {fileID: 1244444886}
-  m_Layer: 0
-  m_Name: Grid
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!156049354 &1244444886
-Grid:
->>>>>>> 69a8dd89c87885cbefb98c59c92688acdfd7471c
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-<<<<<<< HEAD
   m_GameObject: {fileID: 1026835400}
   m_Enabled: 1
   m_EditorHideFlags: 0
@@ -3196,13 +3173,22 @@ Grid:
   m_EditorClassIdentifier: 
   enemyChargerMaxHealth: 4
   enemyCharger: {fileID: 1026835400}
-=======
-  m_GameObject: {fileID: 1244444885}
-  m_Enabled: 1
-  m_CellSize: {x: 1.43, y: 1.43, z: 0}
-  m_CellGap: {x: 0, y: 0, z: 0}
-  m_CellLayout: 0
-  m_CellSwizzle: 0
+--- !u!1 &1244444885
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1244444887}
+  m_Layer: 0
+  m_Name: 
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
 --- !u!4 &1244444887
 Transform:
   m_ObjectHideFlags: 0
@@ -3219,55 +3205,6 @@ Transform:
   - {fileID: 463242296}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
->>>>>>> 69a8dd89c87885cbefb98c59c92688acdfd7471c
---- !u!1 &1362210995
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1362210996}
-  - component: {fileID: 1362210997}
-  m_Layer: 0
-  m_Name: AttackPos
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1362210996
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1362210995}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.15, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 409309234}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1362210997
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1362210995}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 18eec520309291946bc05b04d1a1e159, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  attackPos: {fileID: 1362210996}
-  currentPos: {fileID: 409309234}
-  attackPosSelect: 2
-  sprite: {fileID: 409309233}
 --- !u!1 &1785292829
 GameObject:
   m_ObjectHideFlags: 0
@@ -3318,10 +3255,10 @@ Transform:
 SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
+  - {fileID: 1244444887}
   - {fileID: 927272600}
   - {fileID: 519420032}
   - {fileID: 210194372}
   - {fileID: 409309234}
   - {fileID: 1785292831}
   - {fileID: 1026835407}
-  - {fileID: 1244444887}
