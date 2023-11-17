@@ -15,6 +15,7 @@ public class PlayerAttack : MonoBehaviour
     public LayerMask whatIsEnemies;
     public int damage;
 
+    private RaycastHit2D[] hits;
     private void Update()
     {
         if(timeBetweenAttacks <= 0)
@@ -22,10 +23,15 @@ public class PlayerAttack : MonoBehaviour
             if(UserInput.instance.playerControls.Player.Attack.WasPerformedThisFrame())
             {
                 Debug.Log("Damage Initiated");
-                Collider2D[] enemiesToDamage = Physics2D.OverlapCircleAll(attackPos.position , attackRange , whatIsEnemies);
-                for(int i = 0; i < enemiesToDamage.Length; i++)
+                hits = Physics2D.CircleCastAll(attackPos.position , attackRange , transform.right, 0f, whatIsEnemies);
+                for(int i = 0; i < hits.Length; i++)
                 {
-                    enemiesToDamage[i].GetComponent<EnemyHealth>().TakeDamage(damage);
+                    IDamage Idamage = hits[i].collider.gameObject.GetComponent<IDamage>();
+
+                    if (Idamage != null)
+                    {
+                        Idamage.Damage(damage);
+                    }
                 }
                 timeBetweenAttacks = startTimeBetweenAttacks;
             }

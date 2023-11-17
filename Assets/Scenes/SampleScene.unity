@@ -463,7 +463,7 @@ GameObject:
   m_Component:
   - component: {fileID: 440776373}
   - component: {fileID: 440776374}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: EnemyChargerGFX
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -775,31 +775,15 @@ GameObject:
   - component: {fileID: 1026835406}
   - component: {fileID: 1026835405}
   - component: {fileID: 1026835404}
-  - component: {fileID: 1026835403}
-  m_Layer: 0
+  - component: {fileID: 1026835408}
+  - component: {fileID: 1026835409}
+  m_Layer: 6
   m_Name: EnemyCharger
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1026835403
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1026835400}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 02f20ea08df6c3540b4bf7d3da4d8a65, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  target: {fileID: 0}
-  speed: 200
-  nextWaypointDistance: 3
-  knockbackValue: 1000
-  enemyGFX: {fileID: 0}
 --- !u!114 &1026835404
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -916,6 +900,39 @@ Transform:
   - {fileID: 440776373}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1026835408
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1026835400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35139d57ac6c50b46b46117fcafd836b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 0}
+  position: {fileID: 0}
+  speed: 12
+  nextWaypointDistance: 3
+  jumpForce: 10
+  enemyChargerMaxHealth: 0
+  enemyChargerGFX: {fileID: 440776373}
+--- !u!114 &1026835409
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1026835400}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dac7c04352e635b45bd0df9344ee7d69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyChargerMaxHealth: 4
+  enemyCharger: {fileID: 1026835400}
 --- !u!1 &1362210995
 GameObject:
   m_ObjectHideFlags: 0
