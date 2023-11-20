@@ -14,14 +14,19 @@ public class PlayerAttack : MonoBehaviour
     public float attackRange;
     public LayerMask whatIsEnemies;
     public int damage;
+    public Animator animator;
 
     private RaycastHit2D[] hits;
     private void Update()
     {
-        if(timeBetweenAttacks <= 0)
+        animator.SetBool("Attack?", false);
+
+        if (timeBetweenAttacks <= 0)
         {
             if(UserInput.instance.playerControls.Player.Attack.WasPerformedThisFrame())
             {
+                animator.SetBool("Attack?", true);
+
                 Debug.Log("Damage Initiated");
                 hits = Physics2D.CircleCastAll(attackPos.position , attackRange , transform.right, 0f, whatIsEnemies);
                 for(int i = 0; i < hits.Length; i++)
