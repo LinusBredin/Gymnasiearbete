@@ -2369,6 +2369,11 @@ TilemapCollider2D:
   m_MaximumTileChangeCount: 1000
   m_ExtrusionFactor: 0
   m_UseDelaunayMesh: 0
+--- !u!95 &1139086364 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 4428675760552961721, guid: 7aaa2aafdd9691f46b68eaea28c61e11, type: 3}
+  m_PrefabInstance: {fileID: 4596936556817899553}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1244444885
 GameObject:
   m_ObjectHideFlags: 0
@@ -2627,6 +2632,18 @@ PrefabInstance:
     - target: {fileID: 1803173722239230363, guid: 7aaa2aafdd9691f46b68eaea28c61e11, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5610893541584104435, guid: 7aaa2aafdd9691f46b68eaea28c61e11, type: 3}
+      propertyPath: animator
+      value: 
+      objectReference: {fileID: 1139086364}
+    - target: {fileID: 5610893541584104435, guid: 7aaa2aafdd9691f46b68eaea28c61e11, type: 3}
+      propertyPath: attackRange
+      value: 2.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5610893541584104435, guid: 7aaa2aafdd9691f46b68eaea28c61e11, type: 3}
+      propertyPath: startTimeBetweenAttacks
+      value: 0.58
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

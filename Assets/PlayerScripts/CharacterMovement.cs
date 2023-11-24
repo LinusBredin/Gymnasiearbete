@@ -22,7 +22,7 @@ public class CharacterMovement : MonoBehaviour
     bool jumpCancelled = false;
     bool canDash = true;
     bool canMove = true;
-    bool grounded = true;
+    public bool grounded = true;
     float jumpTime = 0;
 
 
