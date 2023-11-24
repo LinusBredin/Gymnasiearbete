@@ -23,6 +23,7 @@ public class EnemyChargerAI : MonoBehaviour
     Path path;
     int currentWaypoint = 0;
     bool reachedEndOfPath = false;
+    bool tracked = false;
     Vector2 direction;
 
     Seeker seeker;
@@ -61,6 +62,7 @@ public class EnemyChargerAI : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        tracked = GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterMovement>().tracked;
         if (path == null)
         {
             return;
@@ -85,13 +87,13 @@ public class EnemyChargerAI : MonoBehaviour
             currentWaypoint++;
         }
 
-        if (direction.x > 0f)
+        if (direction.x > 0f && tracked == true)
         {
             enemyChargerGFX.localScale = new Vector3(1f, 1f, 1f);
             rb.transform.Translate(new Vector2(speed * Time.deltaTime, 0f));
 
         }
-        else if(direction.x < 0f) 
+        else if(direction.x < 0f && tracked == true) 
         {
             enemyChargerGFX.localScale = new Vector3(-1f, 1f, 1f);
             rb.transform.Translate(new Vector2(-speed*Time.deltaTime, 0f));

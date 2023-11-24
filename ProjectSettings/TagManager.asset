@@ -6,6 +6,7 @@ TagManager:
   tags:
   - platform
   - Enemy
+  - Tracker
   layers:
   - Default
   - TransparentFX
