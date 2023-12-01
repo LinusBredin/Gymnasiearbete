@@ -22,7 +22,7 @@ public class EnemyAttack : MonoBehaviour
         if(collision.gameObject.tag == "Player")
         {
             collision.gameObject.GetComponent<PlayerHealth>().PlayerTakesDamage(enemyContactDamage);
-            gameObject.GetComponent<EnemyAI>().DealtContactDamage();
+            gameObject.GetComponent<EnemyBirdAI>().DealtContactDamage();
         }
     }
 }

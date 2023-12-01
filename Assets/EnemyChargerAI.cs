@@ -16,6 +16,8 @@ public class EnemyChargerAI : MonoBehaviour
     public float enemyChargerMaxHealth;
     float enemyChargerCurrentHealth;
 
+    public int tracker;
+
     bool grounded = true;
 
     public Transform enemyChargerGFX;
@@ -62,7 +64,17 @@ public class EnemyChargerAI : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        tracked = GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterMovement>().tracked;
+        switch (tracker)
+        {
+            case 1:
+                tracked = GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterMovement>().tracked;
+                break;
+            case 3:
+                tracked = GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterMovement>().tracked3;
+                break;
+            default:
+                break;
+        }
         if (path == null)
         {
             return;
@@ -119,4 +131,17 @@ public class EnemyChargerAI : MonoBehaviour
             grounded = false;
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Tracker")
+        {
+            tracker = 1;
+        }
+        if (other.gameObject.tag == "Tracker3")
+        {
+            tracker = 3;
+        }
+    }
+
 }

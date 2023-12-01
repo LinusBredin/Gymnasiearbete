@@ -187,6 +187,8 @@ MonoBehaviour:
   dashSpeed: 40
   maxJumpTimes: 1
   startDashTime: 0.2
+  grounded: 1
+  tracked: 0
   animator: {fileID: 4428675760552961721}
 --- !u!95 &4428675760552961721
 Animator:
@@ -228,6 +230,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 64
   damage: 1
+  animator: {fileID: 4428675760552961721}
 --- !u!114 &5857008612721288051
 MonoBehaviour:
   m_ObjectHideFlags: 0
