@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
+using UnityEngine.EventSystems;
 
 public class EnemyChargerAI : MonoBehaviour
 {
+    public SpriteRenderer sprite;
 
     public Transform target;
     public Transform position;
@@ -15,6 +17,8 @@ public class EnemyChargerAI : MonoBehaviour
 
     public float enemyChargerMaxHealth;
     float enemyChargerCurrentHealth;
+
+    public int tracker;
 
     bool grounded = true;
 
@@ -59,10 +63,35 @@ public class EnemyChargerAI : MonoBehaviour
         }
     }
 
+
+
     // Update is called once per frame
     void FixedUpdate()
     {
-        tracked = GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterMovement>().tracked;
+        if (tracked == true)
+        {
+            if (direction.x > 0)
+            {
+                sprite.flipX = false;
+            }
+            else
+            {
+                sprite.flipX = true;
+            }
+        }
+        
+
+        switch (tracker)
+        {
+            case 1:
+                tracked = GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterMovement>().tracked;
+                break;
+            case 3:
+                tracked = GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterMovement>().tracked3;
+                break;
+            default:
+                break;
+        }
         if (path == null)
         {
             return;
@@ -78,6 +107,8 @@ public class EnemyChargerAI : MonoBehaviour
             reachedEndOfPath = false;
         }
 
+        
+
         direction = ((Vector2)path.vectorPath[currentWaypoint] - rb.position).normalized;
 
         float distance = Vector2.Distance(rb.position, path.vectorPath[currentWaypoint]);
@@ -86,6 +117,8 @@ public class EnemyChargerAI : MonoBehaviour
         {
             currentWaypoint++;
         }
+
+
 
         if (direction.x > 0f && tracked == true)
         {
@@ -119,4 +152,17 @@ public class EnemyChargerAI : MonoBehaviour
             grounded = false;
         }
     }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.tag == "Tracker")
+        {
+            tracker = 1;
+        }
+        if (other.gameObject.tag == "Tracker3")
+        {
+            tracker = 3;
+        }
+    }
+
 }

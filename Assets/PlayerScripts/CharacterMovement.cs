@@ -24,6 +24,8 @@ public class CharacterMovement : MonoBehaviour
     bool canMove = true;
     public bool grounded = true;
     public  bool tracked = false;
+    public bool tracked2 = false;
+    public bool tracked3 = false;
     float jumpTime = 0;
 
 
@@ -186,6 +188,14 @@ public class CharacterMovement : MonoBehaviour
         {
             tracked = true;
         }
+        if (other.gameObject.tag == "Tracker2")
+        {
+            tracked2 = true;
+        }
+        if (other.gameObject.tag == "Tracker3")
+        {
+            tracked3 = true;
+        }
     }
 
     private void OnTriggerExit2D(Collider2D other)
@@ -193,6 +203,14 @@ public class CharacterMovement : MonoBehaviour
         if (other.gameObject.tag == "Tracker")
         {
             tracked = false;
+        }
+        if (other.gameObject.tag == "Tracker2")
+        {
+            tracked2 = false;        
+        }
+        if (other.gameObject.tag == "Tracker3")
+        {
+            tracked3 = false;
         }
     }
 

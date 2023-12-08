@@ -2,19 +2,23 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
+using System.Diagnostics;
 
-public class EnemyAI : MonoBehaviour
+public class EnemyBirdAI : MonoBehaviour
 {
-
+    public SpriteRenderer sprite;
     public Transform target;
 
     public float speed = 200f;
     public float nextWaypointDistance = 3f;
     public float knockbackValue = 1000f;
 
+    public int tracker;
+
     public Transform enemyGFX;
 
     Path path;
+    bool tracked;
     int currentWaypoint = 0;
     bool reachedEndOfPath = false;
     Vector2 direction;
@@ -53,12 +57,37 @@ public class EnemyAI : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
+        switch (tracker)
+        {
+            case 2:
+                tracked = GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterMovement>().tracked2;
+                break;
+            case 3:
+                tracked = GameObject.FindGameObjectWithTag("Player").GetComponent<CharacterMovement>().tracked3;
+                break;
+            default:
+                break;
+        }
         if (path == null)
         {
             return;
         }
 
-        if(currentWaypoint >= path.vectorPath.Count)
+        if ( tracked==true)
+        {
+            if (direction.x > 0.2)
+            {
+                sprite.flipX = true;
+            }
+            else
+            {
+                sprite.flipX = false;
+            }
+        }
+        
+
+
+        if (currentWaypoint >= path.vectorPath.Count)
         {
             reachedEndOfPath = true;
             return;
@@ -69,8 +98,10 @@ public class EnemyAI : MonoBehaviour
 
         direction = ((Vector2)path.vectorPath[currentWaypoint] - rb.position).normalized;
         Vector2 force = direction * speed * Time.deltaTime;
-
+        if (tracked == true)
+        {
         rb.AddForce(force);
+        }
 
         float distance = Vector2.Distance(rb.position, path.vectorPath[currentWaypoint]);
 
@@ -94,5 +125,17 @@ public class EnemyAI : MonoBehaviour
     {
         Vector2 knockback = direction * -1 * knockbackValue;
         rb.AddForce(knockback);
+    }
+
+    public void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.tag == "Tracker2")
+        {
+            tracker = 2;
+        }
+        if (other.tag == "Tracker3")
+        {
+            tracker = 3;
+        }
     }
 }

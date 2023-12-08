@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 2e36cc098a25d634eb47b80e003338ea
+guid: acacd96bc1fbfc648a2aa7ee522f80f9
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -121,7 +121,133 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: Skull thingy (1)_0
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 783
+        width: 261
+        height: 333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9b66b8d19b69704e96058244220daba
+      internalID: 1494828437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skull thingy (1)_1
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 774
+        width: 261
+        height: 333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e7c8b30e2d81c946bf3040e785a331b
+      internalID: -1399296313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skull thingy (1)_2
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 414
+        width: 261
+        height: 315
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71c5d2133a821a14dbd2b38ca1a4d3f2
+      internalID: 1162208843
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skull thingy (1)_3
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 405
+        width: 261
+        height: 333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8cc14c86d8a648c4baa249187a45b6cd
+      internalID: 911003493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skull thingy (1)_4
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 27
+        width: 261
+        height: 333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21dbebbabf638cc448951dc8ab4fe4d1
+      internalID: -869814977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Skull thingy (1)_5
+      rect:
+        serializedVersion: 2
+        x: 702
+        y: 27
+        width: 261
+        height: 333
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ca35e3e4d77fd3499bcf11e207c2979
+      internalID: 1996907917
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -132,7 +258,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Skull thingy (1)_0: 1494828437
+      Skull thingy (1)_1: -1399296313
+      Skull thingy (1)_2: 1162208843
+      Skull thingy (1)_3: 911003493
+      Skull thingy (1)_4: -869814977
+      Skull thingy (1)_5: 1996907917
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
