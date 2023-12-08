@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Pathfinding;
+using UnityEngine.EventSystems;
 
 public class EnemyChargerAI : MonoBehaviour
 {
+    public SpriteRenderer sprite;
 
     public Transform target;
     public Transform position;
@@ -61,9 +63,24 @@ public class EnemyChargerAI : MonoBehaviour
         }
     }
 
+
+
     // Update is called once per frame
     void FixedUpdate()
     {
+        if (tracked == true)
+        {
+            if (direction.x > 0)
+            {
+                sprite.flipX = false;
+            }
+            else
+            {
+                sprite.flipX = true;
+            }
+        }
+        
+
         switch (tracker)
         {
             case 1:
@@ -90,6 +107,8 @@ public class EnemyChargerAI : MonoBehaviour
             reachedEndOfPath = false;
         }
 
+        
+
         direction = ((Vector2)path.vectorPath[currentWaypoint] - rb.position).normalized;
 
         float distance = Vector2.Distance(rb.position, path.vectorPath[currentWaypoint]);
@@ -98,6 +117,8 @@ public class EnemyChargerAI : MonoBehaviour
         {
             currentWaypoint++;
         }
+
+
 
         if (direction.x > 0f && tracked == true)
         {

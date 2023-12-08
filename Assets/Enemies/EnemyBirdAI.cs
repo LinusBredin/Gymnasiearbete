@@ -6,7 +6,7 @@ using System.Diagnostics;
 
 public class EnemyBirdAI : MonoBehaviour
 {
-
+    public SpriteRenderer sprite;
     public Transform target;
 
     public float speed = 200f;
@@ -73,7 +73,21 @@ public class EnemyBirdAI : MonoBehaviour
             return;
         }
 
-        if(currentWaypoint >= path.vectorPath.Count)
+        if ( tracked==true)
+        {
+            if (direction.x > 0.2)
+            {
+                sprite.flipX = true;
+            }
+            else
+            {
+                sprite.flipX = false;
+            }
+        }
+        
+
+
+        if (currentWaypoint >= path.vectorPath.Count)
         {
             reachedEndOfPath = true;
             return;
