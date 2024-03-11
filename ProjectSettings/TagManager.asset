@@ -9,6 +9,8 @@ TagManager:
   - Tracker
   - Tracker2
   - Tracker3
+  - GeneratedMap
+  - GeneratedMapGrid
   layers:
   - Default
   - TransparentFX
